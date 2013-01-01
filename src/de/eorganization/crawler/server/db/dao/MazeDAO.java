@@ -27,8 +27,8 @@ import com.googlecode.objectify.ObjectifyService;
 import com.googlecode.objectify.Query;
 import com.googlecode.objectify.util.DAOBase;
 
-import de.eorganization.crawler.client.OutOfQuotaException;
 import de.eorganization.crawler.client.datasources.responseModel.ListResponse;
+import de.eorganization.crawler.client.exceptions.OutOfQuotaException;
 import de.eorganization.crawler.client.model.Ami;
 import de.eorganization.crawler.client.model.Language;
 import de.eorganization.crawler.client.model.Member;

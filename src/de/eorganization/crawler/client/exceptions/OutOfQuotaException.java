@@ -1,7 +1,7 @@
 /**
  * 
  */
-package de.eorganization.crawler.client;
+package de.eorganization.crawler.client.exceptions;
 
 /**
  * @author mugglmenzel

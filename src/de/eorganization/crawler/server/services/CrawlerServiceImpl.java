@@ -8,7 +8,6 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 import de.eorganization.crawler.client.datasources.responseModel.ListResponse;
 import de.eorganization.crawler.client.model.Ami;
-import de.eorganization.crawler.client.model.Member;
 import de.eorganization.crawler.client.model.Software;
 import de.eorganization.crawler.client.model.UserRole;
 import de.eorganization.crawler.client.services.CrawlerService;
@@ -64,11 +63,6 @@ public class CrawlerServiceImpl extends RemoteServiceServlet implements
 	}
 
 	@Override
-	public Member updateMember(Member member) {
-		return AmiManager.updateMember(member);
-	}
-
-	@Override
 	public void resetAmiCounters() {
 		AmiManager.resetAmiCounters();
 	}
@@ -78,11 +72,6 @@ public class CrawlerServiceImpl extends RemoteServiceServlet implements
 			Map<String, Object> criteria, int startRow, int endRow) {
 		return AmiManager.getAmiSoftware(memberId, amiId, criteria, startRow,
 				endRow);
-	}
-
-	@Override
-	public Member registerMember(Member member) {
-		return AmiManager.registerMember(member);
 	}
 
 	@Override

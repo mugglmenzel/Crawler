@@ -26,6 +26,7 @@ import com.smartgwt.client.widgets.tab.TabSet;
 import com.smartgwt.client.widgets.tab.events.TabSelectedEvent;
 import com.smartgwt.client.widgets.tab.events.TabSelectedHandler;
 
+import de.eorganization.crawler.client.exceptions.OutOfQuotaException;
 import de.eorganization.crawler.client.gui.AmisTab;
 import de.eorganization.crawler.client.gui.IntrospectionTab;
 import de.eorganization.crawler.client.gui.SearchLayout;

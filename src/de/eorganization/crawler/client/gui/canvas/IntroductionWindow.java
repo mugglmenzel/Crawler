@@ -17,8 +17,8 @@ import com.smartgwt.client.widgets.layout.VLayout;
 
 import de.eorganization.crawler.client.gui.handler.MemberUpdatedHandler;
 import de.eorganization.crawler.client.model.Member;
-import de.eorganization.crawler.client.services.CrawlerService;
-import de.eorganization.crawler.client.services.CrawlerServiceAsync;
+import de.eorganization.crawler.client.services.LoginService;
+import de.eorganization.crawler.client.services.LoginServiceAsync;
 
 /**
  * @author mugglmenzel
@@ -71,8 +71,8 @@ public class IntroductionWindow extends Window {
 			public void onChanged(ChangedEvent event) {
 				getMember().setShowWelcomeInfo(
 						!checkboxItem.getValueAsBoolean());
-				CrawlerServiceAsync crawler = GWT.create(CrawlerService.class);
-				crawler.updateMember(getMember(), new AsyncCallback<Member>() {
+				LoginServiceAsync login = GWT.create(LoginService.class);
+				login.updateMember(getMember(), new AsyncCallback<Member>() {
 
 					@Override
 					public void onSuccess(Member result) {

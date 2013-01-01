@@ -24,8 +24,8 @@ import com.smartgwt.client.widgets.layout.VLayout;
 
 import de.eorganization.crawler.client.gui.ImageUtil;
 import de.eorganization.crawler.client.model.Member;
-import de.eorganization.crawler.client.services.CrawlerService;
-import de.eorganization.crawler.client.services.CrawlerServiceAsync;
+import de.eorganization.crawler.client.services.LoginService;
+import de.eorganization.crawler.client.services.LoginServiceAsync;
 
 /**
  * @author mugglmenzel
@@ -117,9 +117,9 @@ public class RegisterWindow extends Window {
 					member.setAWSSecretKey(AWSSecretItem.getValueAsString());
 					member.setAWSAccessKey(AWSAccessItem.getValueAsString());
 
-					CrawlerServiceAsync crawlerService = GWT
-							.create(CrawlerService.class);
-					crawlerService.registerMember(member,
+					LoginServiceAsync loginService = GWT
+							.create(LoginService.class);
+					loginService.registerMember(member,
 							new AsyncCallback<Member>() {
 
 								@Override

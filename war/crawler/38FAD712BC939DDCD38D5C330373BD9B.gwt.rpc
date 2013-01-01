@@ -15,9 +15,10 @@ com.google.gwt.xml.client.DOMException, true, false, false, false, com.google.gw
 com.google.gwt.xml.client.impl.DOMParseException, true, true, false, false, com.google.gwt.xml.client.impl.DOMParseException/3799120635, 3799120635
 com.google.web.bindery.event.shared.UmbrellaException, true, true, false, false, com.google.web.bindery.event.shared.UmbrellaException/1025846929, 1025846929
 de.eorganization.crawler.client.OutOfQuotaException, true, true, false, false, de.eorganization.crawler.client.OutOfQuotaException/3202025953, 3202025953
+de.eorganization.crawler.client.exceptions.MemberExistsException, true, true, false, false, de.eorganization.crawler.client.exceptions.MemberExistsException/2673305573, 2673305573
 de.eorganization.crawler.client.model.LoginInfo, true, true, false, false, de.eorganization.crawler.client.model.LoginInfo/2330426707, 2330426707
-de.eorganization.crawler.client.model.Member, true, true, false, false, de.eorganization.crawler.client.model.Member/640393658, 640393658
-de.eorganization.crawler.client.model.UserRole, true, true, false, false, de.eorganization.crawler.client.model.UserRole/3157516295, 3157516295
+de.eorganization.crawler.client.model.Member, true, true, true, true, de.eorganization.crawler.client.model.Member/640393658, 640393658
+de.eorganization.crawler.client.model.UserRole, true, true, true, true, de.eorganization.crawler.client.model.UserRole/3157516295, 3157516295
 de.eorganization.crawler.client.services.LoginService, false, false, false, false, _, 2245483942
 java.io.IOException, true, true, false, false, java.io.IOException/1159940531, 1159940531
 java.io.UnsupportedEncodingException, true, true, false, false, java.io.UnsupportedEncodingException/1526756933, 1526756933
